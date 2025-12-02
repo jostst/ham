@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <brand text="My Site" href="index.html" />
+
+  <items>
+    <item text="Home" href="index.html" />
+    <item text="About" href="lora.html" />
+  </items>
+</nav>
