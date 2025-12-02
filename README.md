@@ -1,2 +1,2 @@
-# ham
-My ham webpage
+# S54JS homepage
+A home for all related to my HAM.
