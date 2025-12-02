@@ -4,6 +4,6 @@
 
   <items>
     <item text="Home" href="index.html" />
-    <item text="About" href="lora.html" />
+    <item text="LoRa" href="lora.html" />
   </items>
 </nav>
