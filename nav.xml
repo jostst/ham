@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nav>
-  <brand text="My Site" href="index.html" />
+  <brand text="S54JS" href="index.html" />
 
   <items>
     <item text="Home" href="index.html" />
