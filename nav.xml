@@ -5,5 +5,6 @@
   <items>
     <item text="Home" href="index.html" />
     <item text="LoRa" href="lora.html" />
+    <item text="QTH" href="qth.html" />
   </items>
 </nav>
