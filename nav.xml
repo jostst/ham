@@ -5,6 +5,7 @@
   <items>
     <item text="Home" href="index.html" />
     <item text="LoRa" href="lora.html" />
+    <item text="Gear tests" href="gear.html" />
     <item text="QTH" href="qth.html" />
   </items>
 </nav>
