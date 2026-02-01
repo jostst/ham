@@ -13,148 +13,162 @@
   <body>
     <div id="navbar"></div>
 
-    <main class="container">
-      <h1 class="mt-4">Test: Baofeng UV-5R Mini</h1>
+    <main class="container mt-4">
+      <h1 class="text-center">Test: Baofeng UV-5R Mini</h1>
       <div class="row">
-        <p>This is my test of Baofeng UV-5R Mini acquired in 2025.</p>
-        <p>The Baofeng UV-5R Mini is a compact version of the popular UV-5R series, designed for portability while maintaining essential features for amateur radio enthusiasts. It has an added bluetooth capability (which I have never used).</p>
-        <p>I like it for its small size, dual PTT buttons and USB-C charging and I have been EDCing it for the last 6 months. The reception quality is reasonable, but it can get overloaded. This is especially obvious when using a high-gain antenna, such as an original Diamond SRJ-77. I achieved the best results for this radio with cheap antennas, which have a reasonable reception but without any gain. Generally, they do not overload the frontend and thus achieve better results.</p>
+        <div class="col-md-12">
+          <p>This is my test of Baofeng UV-5R Mini acquired in 2025.</p>
+          <p>The Baofeng UV-5R Mini is a compact version of the popular UV-5R series, designed for portability while maintaining essential features for amateur radio enthusiasts. It has an added bluetooth capability (which I have never used).</p>
+          <p>I like it for its small size, dual PTT buttons and USB-C charging and I have been EDCing it for the last 6 months. The reception quality is reasonable, but it can get overloaded. This is especially obvious when using a high-gain antenna, such as an original Diamond SRJ-77. I achieved the best results for this radio with cheap antennas, which have a reasonable reception but without any gain. Generally, they do not overload the frontend and thus achieve better results.</p>
+        </div>
       </div>
       <div class="row">
-        <h2>VHF (2 m band) measurements</h2>
-        <p>Measurements of emission spectra at the feedpoint. Frequency is 144.6 MHz.</p>
-        <h3>Low power</h3>
-        <div class="text-center">
-            <img src="img/uv5rm/UV5RM-VHF-L.png" class="rounded" alt="VHF low power">
+        <div class="col-md-12">
+          <h2>VHF (2 m band) measurements</h2>
+          <p>Measurements of emission spectra at the feedpoint. Frequency is 144.6 MHz.</p>
+          <h3>Low power</h3>
+          <div class="text-center">
+            <img src="img/uv5rm/UV5RM-VHF-L.png" class="rounded img-fluid" alt="VHF low power">
+          </div>
+          <p><em>Measurements show some harmonics. Increasing the attenuation in TinySA decreases the harmonic 5, which is probably generated internally. The 2nd and 3rd harmonics are below the -13 dBm so it appears to be compliant. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
+          <h3>High power</h3>
+          <div class="text-center">
+            <img src="img/uv5rm/UV5RM-VHF-H.png" class="rounded img-fluid" alt="VHF high power">
+          </div>
+          <p><em>Again, some harmonics are measured, but the suppresion is still below -13 dBm. Sweep of the whole range shows no spurious emissions within the measurement range.</em></p>
         </div>
-        <p><em>Measurements show some harmonics. Increasing the attenuation in TinySA decreases the harmonic 5, which is probably generated internally. The 2nd and 3rd harmonics are below the -13 dBm so it appears to be compliant. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
-        <h3>High power</h3>
-        <div class="text-center">
-            <img src="img/uv5rm/UV5RM-VHF-H.png" class="rounded" alt="VHF high power">
-        </div>
-        <p><em>Again, some harmonics are measured, but the suppresion is still below -13 dBm. Sweep of the whole range shows no spurious emissions within the measurement range.</em></p>
       </div>
       <div class="row">
-        <h2>UHF (70 cm band) measurements</h2>
-        <p>These are the measurements of emission spectra at the feedpoint. Frequency is 432.5 MHz.</p>
-        <h3>Low power</h3>
-        <div class="text-center">
-            <img src="img/uv5rm/UV5RM-UHF-L.png" class="rounded" alt="UHF low power">
+        <div class="col-md-12">
+          <h2>UHF (70 cm band) measurements</h2>
+          <p>These are the measurements of emission spectra at the feedpoint. Frequency is 432.5 MHz.</p>
+          <h3>Low power</h3>
+          <div class="text-center">
+            <img src="img/uv5rm/UV5RM-UHF-L.png" class="rounded img-fluid" alt="UHF low power">
+          </div>
+          <p><em>Results are rather surprising with apparenetely no harmonics. Some harmonics are present at lower attenuations but disappear at higher attenuations, thus we conclude that they are probably generated internally in the TinySA. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
+          <h3>High power</h3>
+          <div class="text-center">
+            <img src="img/uv5rm/UV5RM-UHF-H.png" class="rounded img-fluid" alt="UHF high power">
+          </div>
+          <p><em>At high power, a 2nd harmonic appears that is still present at the -60 dB overall attenuation. This might still be internally generated. In any case, it is lower than -13 dBm. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
         </div>
-        <p><em>Results are rather surprising with apparenetely no harmonics. Some harmonics are present at lower attenuations but disappear at higher attenuations, thus we conclude that they are probably generated internally in the TinySA. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
-        <h3>High power</h3>
-        <div class="text-center">
-            <img src="img/uv5rm/UV5RM-UHF-H.png" class="rounded" alt="UHF high power">
-        </div>
-        <p><em>At high power, a 2nd harmonic appears that is still present at the -60 dB overall attenuation. This might still be internally generated. In any case, it is lower than -13 dBm. Sweep of the whole range shows no other spurious emissions within the measurement range.</em></p>
       </div>
       <div class="row">
-        <h2>Results</h2>
-        <h3>Power measurements</h3>
-        <p>Power was measured using the TinySA, which outputs results in dBm. This is easy to convert to W. Advertised power of the handheld is <em>5W</em>. Results are collected in the following table. We take the highest measured value here.</p>
-        <table class="table table-striped w-auto">
-          <thead>
-            <tr>
-              <th>Band</th>
-              <th>Power setting</th>
-              <th>Measured power (dBm)</th>
-              <th>Measured power (W)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>VHF</td>
-              <td>Low</td>
-              <td>32.9</td>
-              <td>1.95</td>
-            </tr>
-            <tr>
-              <td>VHF</td>
-              <td>High</td>
-              <td>35.8</td>
-              <td>3.80</td>
-            </tr>
-            <tr>
-              <td>UHF</td>
-              <td>Low</td>
-              <td>33.2</td>
-              <td>2.09</td>
-            </tr>
-            <tr>
-              <td>UHF</td>
-              <td>High</td>
-              <td>36.2</td>
-              <td>4.17</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <h3>Harmonic suppresion</h3>
-        <p>When determining the harmonic suppresion I used measurements with the highest attenuation. In the table below, power of the harmonic and relative power to the carrier are given in dBm and dBc, respectively. The table also lists the conditions for Slovenia and pass/fail results.</p>
-        <table class="table table-striped w-auto">
-          <thead>
-            <tr>
-              <th>Band</th>
-              <th>Power setting</th>
-              <th>Harmonic</th>
-              <th>Power (dBc)</th>
-              <th>Power (dBm)</th>
-              <th>Limit</th>
-              <th>Pass/Fail</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>VHF</td>
-              <td>Low</td>
-              <td>2nd</td>
-              <td>-56.8</td>
-              <td>-24.5</td>
-              <td>-13 dBm</td>
-              <td>Pass</td>
-            </tr>
-            <tr>
-              <td>VHF</td>
-              <td>Low</td>
-              <td>3rd</td>
-              <td>-63.6</td>
-              <td>-31.3</td>
-              <td>-13 dBm</td>
-              <td>Pass</td>
-            </tr>
-            <tr>
-              <td>VHF</td>
-              <td>High</td>
-              <td>2nd</td>
-              <td>-59.8</td>
-              <td>-24.0</td>
-              <td>-13 dBm</td>
-              <td>Pass</td>
-            </tr>
-            <tr>
-              <td>UHF</td>
-              <td>Low</td>
-              <td>2nd</td>
-              <td>>-70.0</td>
-              <td>N/A</td>
-              <td>-13 dBm</td>
-              <td>Pass</td>
-            </tr>
-            <tr>
-              <td>UHF</td>
-              <td>High</td>
-              <td>2nd</td>
-              <td>-62.2</td>
-              <td>-26.9</td>
-              <td>-13 dBm</td>
-              <td>Pass</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="col-md-12">
+          <h2>Results</h2>
+          <h3>Power measurements</h3>
+          <p>Power was measured using the TinySA, which outputs results in dBm. This is easy to convert to W. Advertised power of the handheld is <em>5W</em>. Results are collected in the following table. We take the highest measured value here.</p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Band</th>
+                  <th>Power setting</th>
+                  <th>Measured power (dBm)</th>
+                  <th>Measured power (W)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>VHF</td>
+                  <td>Low</td>
+                  <td>32.9</td>
+                  <td>1.95</td>
+                </tr>
+                <tr>
+                  <td>VHF</td>
+                  <td>High</td>
+                  <td>35.8</td>
+                  <td>3.80</td>
+                </tr>
+                <tr>
+                  <td>UHF</td>
+                  <td>Low</td>
+                  <td>33.2</td>
+                  <td>2.09</td>
+                </tr>
+                <tr>
+                  <td>UHF</td>
+                  <td>High</td>
+                  <td>36.2</td>
+                  <td>4.17</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Harmonic suppresion</h3>
+          <p>When determining the harmonic suppresion I used measurements with the highest attenuation. In the table below, power of the harmonic and relative power to the carrier are given in dBm and dBc, respectively. The table also lists the conditions for Slovenia and pass/fail results.</p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Band</th>
+                  <th>Power setting</th>
+                  <th>Harmonic</th>
+                  <th>Power (dBc)</th>
+                  <th>Power (dBm)</th>
+                  <th>Limit</th>
+                  <th>Pass/Fail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>VHF</td>
+                  <td>Low</td>
+                  <td>2nd</td>
+                  <td>-56.8</td>
+                  <td>-24.5</td>
+                  <td>-13 dBm</td>
+                  <td>Pass</td>
+                </tr>
+                <tr>
+                  <td>VHF</td>
+                  <td>Low</td>
+                  <td>3rd</td>
+                  <td>-63.6</td>
+                  <td>-31.3</td>
+                  <td>-13 dBm</td>
+                  <td>Pass</td>
+                </tr>
+                <tr>
+                  <td>VHF</td>
+                  <td>High</td>
+                  <td>2nd</td>
+                  <td>-59.8</td>
+                  <td>-24.0</td>
+                  <td>-13 dBm</td>
+                  <td>Pass</td>
+                </tr>
+                <tr>
+                  <td>UHF</td>
+                  <td>Low</td>
+                  <td>2nd</td>
+                  <td>>-70.0</td>
+                  <td>N/A</td>
+                  <td>-13 dBm</td>
+                  <td>Pass</td>
+                </tr>
+                <tr>
+                  <td>UHF</td>
+                  <td>High</td>
+                  <td>2nd</td>
+                  <td>-62.2</td>
+                  <td>-26.9</td>
+                  <td>-13 dBm</td>
+                  <td>Pass</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <h2>Conclusion</h2>
-        <p>The Baofeng UV-5R Mini performs adequately in terms of spurious emissions on both VHF and UHF bands. While some harmonics are present, they remain below the regulatory limits, indicating compliance. However, users should be aware of potential frontend overload issues, especially when using high-gain antennas. Overall, the UV-5R Mini is a compact and functional choice for amateur radio enthusiasts seeking portability without sacrificing essential features.</p>
+        <div class="col-md-12">
+          <h2>Conclusion</h2>
+          <p>The Baofeng UV-5R Mini performs adequately in terms of spurious emissions on both VHF and UHF bands. While some harmonics are present, they remain below the regulatory limits, indicating compliance. However, users should be aware of potential frontend overload issues, especially when using high-gain antennas. Overall, the UV-5R Mini is a compact and functional choice for amateur radio enthusiasts seeking portability without sacrificing essential features.</p>
+        </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
