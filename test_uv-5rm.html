@@ -59,107 +59,111 @@
           <h2>Results</h2>
           <h3>Power measurements</h3>
           <p>Power was measured using the TinySA, which outputs results in dBm. This is easy to convert to W. Advertised power of the handheld is <em>5W</em>. Results are collected in the following table. We take the highest measured value here.</p>
-          <div class="table-responsive text-center">
-            <table class="table table-striped w-auto">
-              <thead>
-                <tr>
-                  <th>Band</th>
-                  <th>Setting</th>
-                  <th>P (dBm)</th>
-                  <th>P (W)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>VHF</td>
-                  <td>Low</td>
-                  <td>32.9</td>
-                  <td>1.95</td>
-                </tr>
-                <tr>
-                  <td>VHF</td>
-                  <td>High</td>
-                  <td>35.8</td>
-                  <td>3.80</td>
-                </tr>
-                <tr>
-                  <td>UHF</td>
-                  <td>Low</td>
-                  <td>33.2</td>
-                  <td>2.09</td>
-                </tr>
-                <tr>
-                  <td>UHF</td>
-                  <td>High</td>
-                  <td>36.2</td>
-                  <td>4.17</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="d-flex justify-content-center">
+            <div class="table-responsive w-auto">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th>Setting</th>
+                    <th>P [dBm]</th>
+                    <th>P [W]</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Low</td>
+                    <td>32.9</td>
+                    <td>1.95</td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>High</td>
+                    <td>35.8</td>
+                    <td>3.80</td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Low</td>
+                    <td>33.2</td>
+                    <td>2.09</td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>High</td>
+                    <td>36.2</td>
+                    <td>4.17</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <h3>Harmonic suppresion</h3>
           <p>When determining the harmonic suppresion I used measurements with the highest attenuation. In the table below, power of the harmonic and relative power to the carrier are given in dBm and dBc, respectively. The table also lists the conditions for Slovenia and pass/fail results.</p>
-          <div class="table-responsive text-center">
-            <table class="table table-striped w-auto">
-              <thead>
-                <tr>
-                  <th>Band</th>
-                  <th>Setting</th>
-                  <th>Harmonic</th>
-                  <th>P (dBc)</th>
-                  <th>P (dBm)</th>
-                  <th>Limit</th>
-                  <th>Result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>VHF</td>
-                  <td>Low</td>
-                  <td>2nd</td>
-                  <td>-56.8</td>
-                  <td>-24.5</td>
-                  <td>-13 dBm</td>
-                  <td>Pass</td>
-                </tr>
-                <tr>
-                  <td>VHF</td>
-                  <td>Low</td>
-                  <td>3rd</td>
-                  <td>-63.6</td>
-                  <td>-31.3</td>
-                  <td>-13 dBm</td>
-                  <td>Pass</td>
-                </tr>
-                <tr>
-                  <td>VHF</td>
-                  <td>High</td>
-                  <td>2nd</td>
-                  <td>-59.8</td>
-                  <td>-24.0</td>
-                  <td>-13 dBm</td>
-                  <td>Pass</td>
-                </tr>
-                <tr>
-                  <td>UHF</td>
-                  <td>Low</td>
-                  <td>2nd</td>
-                  <td>>-70.0</td>
-                  <td>N/A</td>
-                  <td>-13 dBm</td>
-                  <td>Pass</td>
-                </tr>
-                <tr>
-                  <td>UHF</td>
-                  <td>High</td>
-                  <td>2nd</td>
-                  <td>-62.2</td>
-                  <td>-26.9</td>
-                  <td>-13 dBm</td>
-                  <td>Pass</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="d-flex justify-content-center">
+            <div class="table-responsive w-auto">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th>Setting</th>
+                    <th>Harmonic</th>
+                    <th>P [dBc]</th>
+                    <th>P [dBm]</th>
+                    <th>Limit</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Low</td>
+                    <td>2nd</td>
+                    <td>-56.8</td>
+                    <td>-24.5</td>
+                    <td>-13 dBm</td>
+                    <td>Pass</td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Low</td>
+                    <td>3rd</td>
+                    <td>-63.6</td>
+                    <td>-31.3</td>
+                    <td>-13 dBm</td>
+                    <td>Pass</td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>High</td>
+                    <td>2nd</td>
+                    <td>-59.8</td>
+                    <td>-24.0</td>
+                    <td>-13 dBm</td>
+                    <td>Pass</td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Low</td>
+                    <td>2nd</td>
+                    <td>>-70.0</td>
+                    <td>N/A</td>
+                    <td>-13 dBm</td>
+                    <td>Pass</td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>High</td>
+                    <td>2nd</td>
+                    <td>-62.2</td>
+                    <td>-26.9</td>
+                    <td>-13 dBm</td>
+                    <td>Pass</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
