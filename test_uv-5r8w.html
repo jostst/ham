@@ -13,11 +13,189 @@
   <body>
     <div id="navbar"></div>
 
-    <main class="container">
-      <h1 class="mt-4">Test: Baofeng UV-5R (8W version)</h1>
-      <p>This is my test of Baofeng UV-5R (8W version) acquired in 2025. It is a (supposedly) higher output power version of the well known UV-5R, but based on the quality of the model plate I suspect it might be a rebrand/counterfeit.</p>
-      <p>This radio is immensely popular due to its low price and is actually the radio that got a lot of people into the hobby. Being an older model, it probably went through multiple (undocumented) revisions so the results of my unit might not reflect the performance of any other unit.</p>
-      <p><em>Review coming soon....</em></p>
+    <main class="container mt-4">
+      <h1 class="text-center">est: Baofeng UV-5R (8W version)</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <p>This is my test of Baofeng UV-5R (8W version) acquired in 2025. It is a (supposedly) higher output power version of the well known UV-5R, but based on the quality of the model plate I suspect it might be a rebrand/counterfeit.</p>
+          <p>This radio is immensely popular due to its low price and is actually the radio that got a lot of people into the hobby. Being an older model, it probably went through multiple (undocumented) revisions so the results of my unit might not reflect the performance of any other unit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>VHF (2 m band) measurements</h2>
+          <p>Measurements of emission spectra at the feedpoint. Frequency is 144.6 MHz.</p>
+          <h3>Low power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5R-VHF-L.png" class="rounded img-fluid" alt="VHF low power">
+          </div>
+          <p><em></em></p>
+          <h3>Mid power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5R-VHF-M.png" class="rounded img-fluid" alt="VHF mid power">
+          </div>
+          <p><em></em></p>
+          <h3>High power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5R-VHF-H.png" class="rounded img-fluid" alt="VHF high power">
+          </div>
+          <p><em></em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>UHF (70 cm band) measurements</h2>
+          <p>These are the measurements of emission spectra at the feedpoint. Frequency is 432.5 MHz.</p>
+          <h3>Low power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5RM-UHF-L.png" class="rounded img-fluid" alt="UHF low power">
+          </div>
+          <p><em></em></p>
+          <h3>Mid power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5RM-UHF-M.png" class="rounded img-fluid" alt="UHF mid power">
+          </div>
+          <p><em></em></p>
+          <h3>High power</h3>
+          <div class="text-center">
+            <img src="img/uv5r8w/UV5RM-UHF-H.png" class="rounded img-fluid" alt="UHF high power">
+          </div>
+          <p><em></em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Results</h2>
+          <h3>Power measurements</h3>
+          <p>Power was measured using the TinySA, which outputs results in dBm. This is easy to convert to W. Advertised power of the handheld is <em>8W</em>. Results are collected in the following table. We take the highest measured value here.</p>
+          <div class="d-flex justify-content-center">
+            <div class="table-responsive w-auto">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th>P</th>
+                    <th>P [dBm]</th>
+                    <th>P [W]</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Low</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Mid</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>High</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Low</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Mid</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>High</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h3>Harmonic suppresion</h3>
+          <p>When determining the harmonic suppresion I used measurements with the highest attenuation. In the table below, power of the harmonic and relative power to the carrier are given in dBm and dBc, respectively. The table also lists pass/fail results for S5 regulation, where above 30 MHz and below 500W PEP any spurious emissions should be less than -13 dBm.</p>
+          <div class="d-flex justify-content-center">
+            <div class="table-responsive w-auto">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th>P</th>
+                    <th>#</th>
+                    <th>P [dBc]</th>
+                    <th>P [dBm]</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Low</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>Mid</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>VHF</td>
+                    <td>High</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Low</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>Mid</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>UHF</td>
+                    <td>High</td>
+                    <td>2nd</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Conclusion</h2>
+          <p></p>
+        </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
