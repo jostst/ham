@@ -1,0 +1,64 @@
+# =====================
+# macOS
+# =====================
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+*.icloud
+
+# =====================
+# Editors / IDEs
+# =====================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# =====================
+# Node / JS ecosystem
+# (for when you add TS / LESS tooling)
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files (often used with bundlers/dev servers)
+.env
+.env.*
+
+# =====================
+# TypeScript
+# =====================
+*.tsbuildinfo
+
+# =====================
+# Build outputs
+# (Webpack / Vite / Parcel / Rollup / tsc / lessc)
+# =====================
+dist/
+build/
+out/
+coverage/
+.cache/
+
+# =====================
+# Source maps (optional)
+# Uncomment if you don't want to commit them
+# =====================
+# *.map
+
+# =====================
+# OS junk (cross-platform)
+# =====================
+Thumbs.db
+Desktop.ini
